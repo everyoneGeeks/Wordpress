@@ -1,0 +1,17 @@
+.xgenious_team_slider_meta_box label {
+    display: block;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.xgenious_team_slider_meta_box input {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.xgenious_team_slider_meta_box {
+    margin-bottom: 20px;
+}

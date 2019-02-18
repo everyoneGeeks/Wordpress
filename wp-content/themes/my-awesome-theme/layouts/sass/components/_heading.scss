@@ -1,0 +1,52 @@
+.header-Page {
+  background-attachment: fixed;
+  @include cover();
+  margin-bottom: 50px;
+  height: 300px;
+  position: relative;
+  .overlay {
+    background-color: #000;
+    @include overlay(0.7);
+  }
+  h1 {
+    color: #fff;
+    font: {
+      family: $mainFont;
+      size: 30px;
+      weight: bold;
+    }
+    margin-top: 50px;
+    @include center();
+  }
+}
+
+
+.title-section {
+  text-align: center;
+  padding-bottom: 50px;
+  @include exsmallMedia {
+    text-align: left;
+  }
+  h2 {
+    color: $colorH;
+    font: {
+      family: $mainFont;
+      size: $fontSizeH;
+      weight: bold;
+
+    }
+  }
+  P {
+    width: 550px;
+    margin: 0 auto;
+    color: $colorT;
+    line-height: $lineHeight;
+    font: {
+      family: $mainFont;
+      size: $fontSizeT;
+    }
+    @include exsmallMedia {
+      width: 100%;
+    }
+  }
+}

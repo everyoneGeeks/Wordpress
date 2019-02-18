@@ -1,0 +1,162 @@
+/* Start Helpers Files
+************************/
+@import 'sass/helpers/variables';
+@import 'sass/helpers/functions';
+@import 'sass/helpers/mixins';
+@import 'sass/helpers/responsive';
+
+/* Start components Files
+************************/
+@import 'sass/components/buttons';
+@import 'sass/components/heading';
+
+/* Start layout Files
+************************/
+@import 'sass/layout/header';
+@import 'sass/layout/grid';
+@import 'sass/layout/footer';
+
+@import 'sass/pages/homePage';
+
+
+// Start Header Page
+
+.header-Page {
+  background-image: url(../images/about/bg-about-page.jpg);
+ }
+
+// End Header Page
+
+// Start About Video section
+
+.about-video {
+  background-image: url(../images/about/patern.jpg);
+  background-attachment: fixed;
+  @include cover();
+  height: 300px;
+  position: relative;
+  transition: $mainTransition;
+  .video-icon {
+    @include center();
+    @include circle(135px);
+    background-color: rgba($mainColor, 0);
+    text-align: center;
+    line-height: 135px;
+    cursor: pointer;
+    &:hover {
+      transition: $mainTransition;
+      background-color: rgba($mainColor, 1);
+    }
+    i {
+      &:before {
+        margin: 0;
+        font-size: 120px !important;
+        color: #fff;
+        z-index: 5;
+      }
+    }
+    h4 {
+      margin: 0;
+      color: #fff;
+      font: {
+        family: $mainFont;
+
+      }
+    }
+  }
+}
+
+// End About Video section
+
+// Start About Skills Section
+
+.about-skills {
+  padding: 50px 0;
+  .skills-txt {
+    padding: 0 20px;
+    margin-bottom: 50px;
+    h2 {
+      color: $colorH;
+      margin-bottom: 30px;
+      font: {
+        family: $mainFont;
+        weight: bold;
+      }
+    }
+    p {
+      font-family: $mainFont;
+      color: $colorT;
+      line-height: $lineHeight;
+    }
+  }
+  .skills-details {
+    padding: 20px;
+    .skill {
+      margin-bottom: 20px;
+      h5 {
+        display: inline-block;
+        font-family: $mainFont;
+      }
+      span {
+        display: inline-block;
+        font-family: $mainFont;
+        float: right;
+        margin-top: 10px;
+      }
+      .skill-con {
+        width: 100%;
+        height: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        .bg {
+          height: 100%;
+          border-radius: 5px;
+          background-color: $mainColor;
+        }
+        .bg-1 {
+          width: 90%;
+        }
+        .bg-2 {
+          width: 80%;
+        }
+        .bg-3 {
+          width: 95%;
+        }
+        .bg-4 {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+// End About Skills Section
+
+// Start About Info
+
+.about-info {
+  padding: 20px 0;
+  .info-box {
+    width: 100%;
+    height: 150px;
+    padding: 20px 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    i {
+      &:before {
+        margin: 0;
+        font-size: 50px;
+      }
+    }
+    span {
+      display: inline-block;
+      margin-left: 20px;
+      font-size: 50px;
+    }
+    h4 {
+      font-family: $mainFont;
+    }
+  }
+}
+
+// End About Info

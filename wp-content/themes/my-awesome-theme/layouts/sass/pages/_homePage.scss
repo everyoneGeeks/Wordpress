@@ -1,0 +1,781 @@
+/* Start Helpers Files
+************************/
+@import 'sass/helpers/variables';
+@import 'sass/helpers/functions';
+@import 'sass/helpers/mixins';
+@import 'sass/helpers/responsive';
+
+/* Start layout Files
+************************/
+@import 'sass/layout/header';
+@import 'sass/layout/grid';
+@import 'sass/layout/footer';
+
+/* Start components Files
+************************/
+@import 'sass/components/heading';
+@import 'sass/components/buttons';
+
+
+// Start Slider Section
+.slider {
+  background-image: url('../images/slider-btn.png');
+  @include cover();
+  .slider-txt {
+    width: 100%;
+    padding-top: 150px;
+    h1 {
+      margin-bottom: 30px;
+      color: $colorH;
+      font: {
+        family: $mainFont;
+        size: 52px;
+        weight: 700;
+      }
+      span {
+        color: $mainColor;
+      }
+      @include exsmallMedia {
+        font-size: 40px;
+      }
+    }
+    p {
+      color: $colorT;
+      line-height: $lineHeight;
+      margin-bottom: 30px;
+      font: {
+        family: $mainFont;
+        size: $fontSizeT;
+      }
+    }
+    button {
+      margin-right: 20px;
+      &:nth-of-type(2) {
+        background-color: #000;
+      }
+    }
+  }
+  .slider-img {
+    width: 100%;
+    height: auto;
+    margin: 70px;
+    @include exsmallMedia {
+      margin: 0;
+    }
+    @include smallMedia {
+      margin: 0;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+
+// End Slider Section
+
+// Start Features Section
+
+.features {
+  padding: 50px 0;
+  @include exsmallMedia {
+    padding: 150px 0 0 0;
+  }
+  .features-info {
+    padding-top: 30px;
+    .feat {
+      @include prefixer(box-shadow, 0 0 10px $colorShadow, webkit o ms);
+      width: 100%;
+      height: 350px;
+      padding: 0 15px;
+      margin-bottom: 30px;
+      text-align: center;
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+      }
+      h3 {
+        color: $colorH;
+        font: {
+          family: $mainFont;
+          size: 18px;
+          weight: 700;
+        }
+      }
+      p {
+        color: $colorT;
+        margin-top: 16px;
+        font: {
+          family: $mainFont;
+          size: 14px;
+        }
+      }
+    }
+  }
+}
+
+// End Features Section
+
+// Start About Us Section
+
+.about-us {
+  padding: 50px 0;
+  .about-txt {
+    width: 100%;
+    @include mediumMedia {
+      padding-left: 83px;
+    }
+    @include maxMedia {
+      padding-left: 83px;
+    }
+    h2 {
+      color: $colorH;
+      margin-bottom: 30px;
+      font: {
+        family: $mainFont;
+        size: 36px;
+        weight: 700;
+      }
+    }
+    p {
+      color: $colorT;
+      line-height: $lineHeight;
+      font: {
+        family: $mainFont;
+        size: $fontSizeT;
+      }
+      &:nth-of-type(2){
+        margin: 0;
+      }
+    }
+    button {
+      margin-top: 30px;
+    }
+
+  }
+  .about-img {
+    width: 100%;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+// End About Us Section
+
+// Start Services Section
+.services {
+  padding: 50px 0;
+  .ser {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    border: $mainBorder;
+    border-radius: $borderR;
+    .ser-img {
+      width: 30%;
+      display: inline-block;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    .ser-txt {
+      font-family: $mainFont;
+      h4 {
+        color: $colorH;
+        font-weight: bold;
+        margin: 17px;
+      }
+      p {
+        color: $colorT;
+        font-size: $fontSizeT;
+      }
+    }
+  }
+}
+// End Services Section
+
+// Start Get Started Section
+
+.get-started {
+  height: 350px;
+  padding: 20px 0;
+  background-image: url('../images/get-started.jpg');
+  @include cover();
+  .get-txt {
+    padding-top: 15px;
+    @include exsmallMedia {
+      padding-top: 0px;
+      text-align: center;
+    }
+    h2 {
+      color: #fff;
+      margin-bottom: 30px;
+      line-height: 1.4;
+      font: {
+        family: $mainFont;
+        size: 32px;
+        weight: bold;
+      }
+      @include exsmallMedia {
+        font-size: 25px;
+        margin-bottom: 20px;
+      }
+    }
+    button {
+      background-color: #0ABC5F;
+      margin-right: 20px;
+      transition: $mainTransition;
+      @include exsmallMedia {
+        &:nth-of-type(2) {
+          margin-right: 0;
+        }
+      }
+      &:hover {
+        background-color: transparent;
+        border: 2px solid #fff;
+      }
+    }
+  }
+  .get-img {
+    padding-top: 30px;
+    text-align: center;
+    img {
+      max-width: 50%;
+      height: auto;
+    }
+  }
+}
+
+// End Get Started Section
+
+// Start Hosting section
+
+.hosting {
+  padding: 50px 0;
+  .hosting-txt {
+    padding: 50px 0;
+    h2 {
+      margin-bottom: 40px;
+      color: $colorH;
+      font: {
+        family: $mainFont;
+        size: $fontSizeH;
+        weight: bold;
+      }
+    }
+    p {
+      color: $colorT;
+      line-height: $lineHeight;
+      margin-bottom: 40px;
+      font: {
+        family: $mainFont;
+        size: $fontSizeT;
+      }
+    }
+  }
+  .hosting-img {
+    width: 100%;
+    text-align: right;
+    @include exsmallMedia {
+      text-align: center;
+    }
+    img {
+      width: 90%;
+      height: auto;
+    }
+  }
+}
+
+// End Hosting Section
+/* Start Our Work Section */
+
+.our-work {
+  padding: 70px 0;
+  ul {
+    font-family: $mainFont;
+    text-align: center;
+    li {
+      padding: 10px 20px;
+      margin-bottom: 10px;
+      border: $mainBorder;
+      border-radius: $borderR;
+      margin-right: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        background-color: $mainColor;
+        color: #fff;
+      }
+    }
+  }
+  .gallery {
+    padding-top: 50px;
+    height: 755px;
+    .mix {
+      width: 100%;
+      margin-bottom: 30px;
+      display: none;
+      position: relative;
+      .overlay {
+        @include overlay(0.8);
+        background-color: #333;
+        transform: scale(0, 0);
+        border-radius: $borderR;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: $mainTransition;
+        .show-work {
+          width: 217px;
+          position: absolute;
+          bottom: 10%;
+          left: 8%;
+          color: #fff;
+          transition: $mainTransition;
+          font-family: $mainFont;
+          &:before {
+            content: '\f106';
+            font-family: Flaticon;
+            position: absolute;
+            bottom: 3%;
+            right: 0;
+            font-size: 25px;
+            cursor: pointer
+          }
+        }
+        h5 {
+          margin: 0 0 5px;
+          font: {
+            size: 18px;
+            weight: 500;
+          }
+
+        }
+      }
+      &:hover {
+        .overlay {
+          transform: scale(1, 1);
+        }
+      }
+      img {
+        border-radius: $borderR;
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+}
+
+/* End Our Work Section */
+
+/* Start Pricing Table Section */
+
+.pricing {
+  padding: 50px 0;
+  .pricing-box {
+    width: 100%;
+    padding: 40px 0;
+    margin-bottom: 30px;
+    border: $mainBorder;
+    border-radius: $borderR;
+    position: relative;
+    transition: $mainTransition;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid $mainColor;
+      .h-pricing {
+        background-color: $mainColor;
+        color: #fff !important;
+      }
+    }
+    .h-pricing {
+      width: 150px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      font-family: $mainFont;
+      font-weight: bold;
+      color: $colorH;
+      border-radius: 4px 0 40px 0;
+      box-shadow: 2px 2px 5px $colorShadow;
+      transition: all 0.3s ease-out;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .box-title {
+      text-align: center;
+      margin-bottom: 50px;
+      img {
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        padding-right: 5px;
+      }
+      h4 {
+        color: $colorH;
+        margin-top: 20px;
+        font: {
+          family: $mainFont;
+          size: 50px;
+          weight: bold;
+        }
+        span {
+          font-size: 27px;
+        }
+      }
+      .s-span {
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.5);
+        font: {
+          family: $mainFont;
+          size: 18px;
+          weight: bold;
+        }
+      }
+      p {
+        color: $colorT;
+        margin-top: 10px;
+        font: {
+          family: $mainFont;
+          size: $fontSizeT;
+        }
+      }
+    }
+    .detils-box {
+      div {
+        padding: 15px 20px;
+        font-family: $mainFont;
+      }
+      .s-det {
+        background-color: rgba(196, 196, 196, 0.1);
+      }
+      button {
+        margin: 40px auto 0;
+        display: block;
+        border: 1px solid $mainColor;
+        background-color: transparent;
+        color: $mainColor;
+        &:hover {
+          background-color: $mainColor;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .b-box {
+    border: 1px solid $mainColor;
+  }
+  .h-plan {
+    background-color: $mainColor;
+    color: #fff !important;
+  }
+}
+
+/* End Pricing Table Section */
+
+/* Start Our Team Section */
+
+.our-team {
+  padding: 50px 0;
+  .team-box {
+    width: 100%;
+    border-radius: $borderR;
+    margin-bottom: 30px;
+    cursor: pointer;
+    &:hover {
+      .team-img {
+        img {
+          transform: scale(1)
+        }
+      }
+    }
+    .team-img {
+      overflow: hidden;
+      img {
+        transition: all 2s ease-out;
+        max-width: 100%;
+        height: auto;
+        border-top-left-radius: $borderR;
+        border-top-right-radius: $borderR;
+        transform: scale(1.1);
+      }
+    }
+    .team-txt {
+      padding: 20px 0;
+      text-align: center;
+      @include prefixer(box-shadow, 0 0 10px $colorShadow, webkit o ms);
+      h5 {
+        margin: 0 0 10px 0;
+        color: $colorH;
+        font: {
+          family: $mainFont;
+          size: 15px;
+          weight: bold;
+        }
+      }
+      span {
+        color: $colorT;
+        font-family: $mainFont;
+      }
+    }
+    ul {
+      margin: 10px;
+      font-size: 18px;
+      a {
+        text-decoration: none;
+        color: $colorT;
+      }
+    }
+  }
+}
+
+/* End Our Team Section */
+
+/* Start Testimonials Section */
+
+.testimonials {
+  padding: 50px 0;
+  .testi-box {
+    width: 100%;
+    padding: 20px 23px;
+    margin-top: 50px;
+    box-shadow: 0 0 10px $colorShadow;
+    position: relative;
+  }
+  .box-title {
+    .box-img {
+      width: 37%;
+      display: inline-block;
+      img {
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: $borderR;
+        border: $mainBorder;
+        display: block;
+        position: absolute;
+        top: -6%;
+        left: 5%;
+      }
+    }
+    .box-info {
+      width: 55%;
+      display: inline-block;
+      h4 {
+        margin: 0 0 5px;
+        color: $colorH;
+        font: {
+          family: $mainFont;
+          weight: bold;
+          size: 15px;
+        }
+      }
+      p {
+        color: $colorT;
+        font-family: $mainFont;
+        font-size: 13px;
+        margin: 0;
+      }
+      ul {
+        margin: 6px 0;
+        li {
+          padding: 0 10px 0 0;
+          a {
+            color: $colorT;
+          }
+        }
+      }
+    }
+  }
+  .box-txt {
+    padding: 25px 0 0;
+    margin-top: 20px;
+    border-top: $mainBorder;
+    position: relative;
+    &:after {
+      content: '\f107';
+      font-family: Flaticon;
+      width: 125px;
+      height: 146px;
+      font-size: 126px;
+      opacity: 0.1;
+      transform: rotate(45deg);
+      position: absolute;
+      top: -57px;
+      right: 0;
+    }
+    p {
+      color: $colorT;
+      line-height: 1.6;
+      font: {
+        family: $mainFont;
+        style: italic;
+      }
+    }
+  }
+}
+
+/* End Testimonials Section */
+
+/* Start Clients Section */
+
+.clients {
+  padding: 50px 0;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+/* End Clients Section */
+
+/* Start Button Scroll To Top */
+
+.scroll {
+  @extend %button;
+  right: 75px;
+  bottom: 20px;
+  display: none;
+}
+
+/* End Button Scroll To Top  */
+
+/* Start Chat Button */
+
+.chat-btn {
+  @extend %button;
+  right: 20px;
+  bottom: 20px;
+}
+
+/* End Chat Button */
+
+/* Start Chat Box */
+
+.box-chat {
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: $borderR;
+  border: $mainBorder;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  z-index: 4;
+  display: none;
+  h4 {
+    margin: 0;
+    color: $colorH;
+    font: {
+      family: $mainFont;
+      weight: bold;
+    }
+  }
+}
+
+/* End Chat Box */
+
+/* Start Contcat Us Section */
+
+.contact-us {
+  padding: 50px 0;
+  width: 100%;
+  position: relative;
+  .overlay-bac {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    background-image: url(../images/bg-map.png);
+    @include cover();
+  }
+  .contact-title {
+    h2 {
+      color: $colorH;
+      font: {
+        family: $mainFont;
+        size: $fontSizeH;
+        weight: bold;
+      }
+    }
+    p {
+      width: 90%;
+      color: $colorT;
+      line-height: $lineHeight;
+      margin-top: 30px;
+      font: {
+        family: $mainFont;
+        size: $fontSizeT;
+      }
+    }
+  }
+  .contact-info {
+    margin-top: 63px;
+    .info {
+      width: 70%;
+      height: 50px;
+      font-family: $mainFont;
+      font-size: 14px;
+      background-color: rgba(0, 0, 0, 0.05);
+      border: $mainBorder;
+      border-radius: $borderR;
+      margin-bottom: 20px;
+      padding-left: 20px;
+      line-height: 50px;
+      @include exsmallMedia {
+        width: 100%;
+      }
+      img {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+      }
+    }
+  }
+  .contact-form {
+    padding-top: 90px;
+    .form-box {
+      input {
+        width: 100%;
+        height: 50px;
+        font-family: $mainFont;
+        background-color: rgba(0, 0, 0, 0.05);
+        border: $mainBorder;
+        border-radius: $borderR;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        outline-color: $mainColor;
+      }
+      textarea {
+        width: 100%;
+        height: 200px;
+        font-family: $mainFont;
+        background-color: rgba(0, 0, 0, 0.05);
+        border: $mainBorder;
+        border-radius: $borderR;
+        padding: 20px;
+        margin-bottom: 20px;
+        resize: none;
+        outline-color: $mainColor;
+      }
+      button {
+        width: 100%;
+        outline-color: $mainColor;
+      }
+    }
+  }
+}
+
+/* End Contact Us Section */

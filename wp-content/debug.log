@@ -1,0 +1,13 @@
+[18-Feb-2019 11:51:07 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /var/www/html/wordpress/wp-content/themes/my-awesome-theme/index.php on line 417
+[18-Feb-2019 11:51:08 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /var/www/html/wordpress/wp-content/themes/my-awesome-theme/index.php on line 417
+[18-Feb-2019 11:51:08 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /var/www/html/wordpress/wp-content/themes/my-awesome-theme/index.php on line 417
+[18-Feb-2019 11:51:09 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /var/www/html/wordpress/wp-content/themes/my-awesome-theme/index.php on line 417
+[18-Feb-2019 11:51:17 UTC] PHP Notice:  Undefined variable: count in /var/www/html/wordpress/wp-content/themes/my-awesome-theme/index.php on line 415
+[18-Feb-2019 11:54:18 UTC] PHP Notice:  Undefined variable: xgenious_team_slider_markup_5 in /var/www/html/wordpress/wp-content/themes/my-awesome-theme/index.php on line 462
+[18-Feb-2019 11:54:18 UTC] PHP Notice:  Undefined variable: social in /var/www/html/wordpress/wp-content/themes/my-awesome-theme/index.php on line 464
+[18-Feb-2019 11:57:17 UTC] PHP Notice:  Undefined offset: 1 in /var/www/html/wordpress/wp-includes/class-wp-query.php on line 3071
+[18-Feb-2019 11:57:18 UTC] PHP Notice:  Undefined offset: 1 in /var/www/html/wordpress/wp-includes/class-wp-query.php on line 3071
+[18-Feb-2019 13:17:44 UTC] WordPress-GitHub-Sync needs an auth token. Please update your settings.
+[18-Feb-2019 13:17:52 UTC] WordPress-GitHub-Sync needs an auth token. Please update your settings.
+[18-Feb-2019 13:19:12 UTC] WordPress-GitHub-Sync needs a properly formed repository. Please update your settings.
+[18-Feb-2019 13:19:23 UTC] WordPress-GitHub-Sync needs a properly formed repository. Please update your settings.

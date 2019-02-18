@@ -1,0 +1,66 @@
+/*=============================================
+   Team Slider Shortcode Admin Dashboar
+===============================================*/
+
+.xgeinous-team-slider-section-title h2 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.xgenious-team-slider-options-body tr>td,
+.team_slider-widget-append tr>td p {
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-left: 0;
+}
+
+.xgenious-team-slider-options-body tr>td select {
+    width: 100%;
+    color: #000;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#team-slider-append table,
+.xgenious-team-slider-options-body table {
+    width: 80%;
+}
+
+#show_preview_img {
+    width: 80%;
+}
+
+#show_short_code {
+    background-color: #ddd;
+    padding: 15px;
+    width: 100%;
+}
+
+.xgenious-team-slider-shortcode-input input,
+.xgenious-team-slider-shortcode-input textarea {
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.xgenious-team-slider-shortcode-input label {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.xsmall-text {
+    font-size: 12px;
+    color: #999;
+    display: block;
+}
+
+.xgenious-team-slider-preview-image h2 {
+    text-align: center;
+    width: 80%;
+    font-size: 30px;
+}
+
+select.xstyle {
+    width: 100%;
+}

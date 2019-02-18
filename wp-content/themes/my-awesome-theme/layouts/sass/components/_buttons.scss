@@ -1,0 +1,51 @@
+button {
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  text-transform: uppercase;
+  outline: none;
+  transition: 0.5s;
+  font: {
+    family: $mainFont;
+    size: 14px;
+  }
+}
+
+.main-btn {
+  background-color: $mainColor;
+  &:hover {
+    border: 2px solid $mainColor;
+    color: $mainColor;
+    background-color: transparent;
+  }
+}
+
+.active {
+  background-color: $mainColor;
+  color: #fff;
+}
+
+%button {
+  width: 40px;
+  height: 40px;
+  background-color: $mainColor;
+  color: #fff;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  text-align: center;
+  position: fixed;
+  z-index: 15;
+  transition: .5s;
+  cursor: pointer;
+  &:hover {
+    border: 2px solid $mainColor;
+    background-color: transparent;
+    color: $mainColor;
+    @include prefixer(box-shadow, 0 0 10px rgba(0, 0, 0, 0.2), webkit moz o );
+  }
+  i {
+    display: inline-block;
+    line-height: 37px;
+  }
+}

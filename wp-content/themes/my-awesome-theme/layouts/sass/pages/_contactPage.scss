@@ -1,0 +1,27 @@
+/* Start Helpers Files
+************************/
+@import 'sass/helpers/variables';
+@import 'sass/helpers/functions';
+@import 'sass/helpers/mixins';
+@import 'sass/helpers/responsive';
+
+/* Start layout Files
+************************/
+@import 'sass/layout/header';
+@import 'sass/layout/grid';
+@import 'sass/layout/footer';
+
+/* Start components Files
+************************/
+@import 'sass/components/buttons';
+@import 'sass/components/heading';
+
+@import 'sass/pages/homePage';
+
+// Start Header Page
+
+.header-Page {
+  background-image: url(../images/about/contact.jpg);
+ }
+
+// End Header Page
