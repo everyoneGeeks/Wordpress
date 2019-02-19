@@ -1,11 +1,4 @@
 <?php
-/**
- * Twenty Nineteen functions and definitions
- *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
- *
- * @package Twenty_Nineteen
- */
 
 if ( ! function_exists( 'twenty_nineteen_setup' ) ) :
 	/**
@@ -135,7 +128,9 @@ function twenty_nineteen_scripts() {
 	//add custome Style
 	wp_enqueue_style( 'homePage', get_template_directory_uri().'/layouts/homePage.css' );
 	// Add jquery
-	wp_enqueue_script( 'Jquery', get_template_directory_uri() . '/js/jquery-3.3.1.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'Jquery22', get_template_directory_uri() . '/js/jquery-3.3.1.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'Jquery3','https://code.jquery.com/jquery-1.12.4.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'Jquery2', get_template_directory_uri() . '/js/jquery.filterizr-with-jquery.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'aos', get_template_directory_uri() . '/js/aos.js', array(), '20151215', true );
@@ -163,6 +158,23 @@ function arphabet_widgets_init() {
 
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );
+/**
+ * Register  widgetized Header
+ *
+ */
+function header_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'header',
+		'id'            => 'home_right_3',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'header_widgets_init' );
 
 function wpsites_before_post_widget( $content ) {
 	if ( is_singular( array( 'post', 'page' ) ) && is_active_sidebar( 'before-post' ) && is_main_query() ) {
@@ -171,6 +183,33 @@ function wpsites_before_post_widget( $content ) {
 	return $content;
 }
 add_filter( 'the_content', 'wpsites_before_post_widget' );
+
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function	photo_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'photo',
+		'id'            => 'home_right_2',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'photo_widgets_init' );
+
+// register Designmodo_Social_Profile widget
+function register_social_profile() {
+	register_widget('Social_Profile');
+	}
+	 
+	add_action('widgets_init', 'register_social_profile');
+
+
 /**
  * Implement the Custom Header feature.
  */

@@ -20,24 +20,8 @@
         <div class="top-bar hidden-xs" id="top-bar">
           <div class="container">
             <div class="row">
-              <div class="col-sm-6">
-                <div class="top-bar-address">
-                  <ul class="list-unstyled list-inline">
-                    <li><a href="#"><i class="fa fa-envelope"></i>info@clicktopass.com</a></li>
-                    <li><i class="fa fa-phone"></i>888-123-4567</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="social-icon">
-                      <ul class="list-inline list-unstyled">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                      </ul>
-                </div>
-              </div>
+            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("header") ) : ?>
+<?php endif;?>
             </div>
           </div>
         </div>
